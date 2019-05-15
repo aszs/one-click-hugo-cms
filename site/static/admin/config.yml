@@ -4,11 +4,14 @@ backend:
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
+publish_mode: editorial_workflow
+
 collections: # A list of collections the CMS should be able to edit
   - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'FAQ' # Used in the UI
     folder: '_faqs'
     create: true # Allow users to create new documents in this collection
+    format: 'json'
     fields: # The fields each document in this collection have
       - { label: 'Question', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Answer', name: 'body', widget: 'markdown' }
