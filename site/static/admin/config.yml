@@ -5,7 +5,7 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
- - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: 'faq' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'FAQ' # Used in the UI
     folder: '_faqs'
     create: true # Allow users to create new documents in this collection
@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Question', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Answer', name: 'body', widget: 'markdown' }
 
- - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       
- - name: "pages"
+  - name: "pages"
     label: "Pages"
     files:
       - file: "site/content/_index.md"
@@ -90,7 +90,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
 
- - name: 'kitchenSink' # all the things in one entry, for documentation and quick testing
+  - name: 'kitchenSink' # all the things in one entry, for documentation and quick testing
     label: 'Kitchen Sink'
     folder: '_sink'
     create: true
